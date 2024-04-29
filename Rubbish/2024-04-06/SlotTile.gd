@@ -2,10 +2,9 @@ extends Node2D
 class_name SlotTile
 
 var size :Vector2
-var tween : Tween
-var speed : int
-	
-func _init():
+var tween : Tween = create_tween()
+
+func _ready():
 	pass
 
 func set_texture(tex):
@@ -16,15 +15,13 @@ func set_size(new_size: Vector2):
 	size = new_size
 	$Sprite2D.scale = size / $Sprite2D.texture.get_size()
   
-func set_velocity(spd):
-	speed = spd
-	
+func set_velocity(speed):
+	tween.set_speed_scale(speed) 
   
 func move_to(to: Vector2):
-	tween = get_tree().create_tween()
-	tween.set_speed_scale(speed)
-	tween.tween_property(self, "position",to , 1).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT) 
-	tween.connect("finished",Callable(get_node("../../SlotMachine"), "_on_tile_moved").bind(self))  
+	tween.interpolate_property(self, "position",
+	position, to, 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	tween.start()
 
 func move_by(by: Vector2):
 	move_to(position + by)

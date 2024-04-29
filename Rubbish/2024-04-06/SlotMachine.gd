@@ -1,6 +1,6 @@
 extends Node2D
 
-const SltTil := preload ("res://scenes/SlotTile.tscn")
+const SlotTile := preload ("res://scenes/SlotTile.tscn")
 # Stores the SlotTile's SPIN_UP animation distance
 const SPIN_UP_DISTANCE = 100.0
 signal stopped
@@ -83,14 +83,14 @@ func _ready():
   
 # Stores and initializes a new tile at the given grid cell
 func _add_tile(col: int, row: int) -> void:
-	var theTile = SltTil.instantiate()
-	add_child(theTile)
-	tiles.append(theTile)
+	tiles.append(SlotTile.instantiate())
 	var tile := get_tile(col, row)
+	tile.get_node('Tween').connect("finished", Callable(self, "_on_tile_moved"))
 	tile.set_texture(_randomTexture())
 	tile.set_size(tile_size)
 	tile.position = grid_pos[col][row]
 	tile.set_velocity(speed_norm)
+	add_child(tile)
 
 # Returns the tile at the given grid cell
 func get_tile(col: int, row: int) -> SlotTile:
@@ -136,14 +136,12 @@ func _spin_reel(reel: int) -> void:
 func _move_tile(tile: SlotTile) -> void:
 	# Plays a spin up animation
 	tile.spin_up()
-	var anplayer = tile.get_child(1)
-	await anplayer.animation_finished
-
+	await tile.get_node("Animations").animation_finished
 	# Moves reel by one tile at a time to avoid artifacts when going too fast
 	tile.move_by(Vector2(0, tile_size.y))
 	# The reel will move further through the _on_tile_moved function
   
-func _on_tile_moved(tile: SlotTile) -> void:
+func _on_tile_moved(tile: SlotTile, _nodePath) -> void:
 	# Calculates the reel that the tile is on
 	var reel := int(tile.position.x / tile_size.x)
 	# Count how many tiles moved per reel
