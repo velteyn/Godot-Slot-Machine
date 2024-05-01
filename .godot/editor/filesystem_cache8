@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714554409
+::res://::1714578442
 icon.png::CompressedTexture2D::1424998831480025691::1609277622::1714400586::1::::<><>::
 README.md::TextFile::-1::1609277622::0::1::::<><>::
 ::res://assets/::1714551839
@@ -267,65 +267,10 @@ Forma 15 #3.png::CompressedTexture2D::9136782374614053733::1585505294::171455183
 Forma 16 #3.png::CompressedTexture2D::1850075341957358490::1585505294::1714551838::1::::<><>::
 Forma 17 #3.png::CompressedTexture2D::1725664449661556910::1585505294::1714551838::1::::<><>::
 Forma 18 #3.png::CompressedTexture2D::6925963940918999884::1585505294::1714551838::1::::<><>::
-::res://assets/table/::1714551839
+::res://assets/table/::1714581014
 Capa 31.png::CompressedTexture2D::4297110320939985833::1585505306::1714551838::1::::<><>::
-Grupo 7 copia 2.png::CompressedTexture2D::8451072601548377359::1585505306::1714551838::1::::<><>::
-Grupo 7 copia 4.png::CompressedTexture2D::4716545203210677285::1585505306::1714551838::1::::<><>::
-Grupo 7 copia 6.png::CompressedTexture2D::3601697588475977201::1585505306::1714551838::1::::<><>::
-Grupo 7 copia.png::CompressedTexture2D::5616592276663671042::1585505306::1714551838::1::::<><>::
+front_panel.png::CompressedTexture2D::3453835590499661534::1714581022::1714581027::1::::<><>::
 table (composite).png::CompressedTexture2D::1826173084511849678::1585505306::1714551839::1::::<><>::
-::res://assets/table/Grupo 1 copia/::1714551838
-Forma 4.png::CompressedTexture2D::8553044070646766520::1585505318::1714551838::1::::<><>::
-Forma 5.png::CompressedTexture2D::8593039069536383033::1585505318::1714551838::1::::<><>::
-Forma 6.png::CompressedTexture2D::5471245290549268692::1585505318::1714551838::1::::<><>::
-Forma 7.png::CompressedTexture2D::3025300158305733452::1585505318::1714551838::1::::<><>::
-Forma 8.png::CompressedTexture2D::3974113599757908286::1585505318::1714551838::1::::<><>::
-Forma 9.png::CompressedTexture2D::2861809673035622640::1585505318::1714551838::1::::<><>::
-Forma 10.png::CompressedTexture2D::330443896093216932::1585505318::1714551838::1::::<><>::
-Forma 11.png::CompressedTexture2D::8472788773424464168::1585505318::1714551838::1::::<><>::
-Forma 12.png::CompressedTexture2D::5941996618391328249::1585505318::1714551838::1::::<><>::
-Forma 13.png::CompressedTexture2D::1461076675936436368::1585505318::1714551838::1::::<><>::
-Forma 14.png::CompressedTexture2D::4485411947301504538::1585505318::1714551838::1::::<><>::
-Forma 15.png::CompressedTexture2D::2837163227631253757::1585505318::1714551838::1::::<><>::
-Forma 16.png::CompressedTexture2D::1874146052947070648::1585505318::1714551838::1::::<><>::
-Forma 17.png::CompressedTexture2D::7878586410996132694::1585505318::1714551838::1::::<><>::
-Forma 18.png::CompressedTexture2D::7378279347849887916::1585505318::1714551838::1::::<><>::
-::res://assets/table/Grupo 1 copia 2/::1714551838
-Forma 4 #1.png::CompressedTexture2D::3573823406501999686::1585505316::1714551838::1::::<><>::
-Forma 5 #1.png::CompressedTexture2D::1152755693957472037::1585505316::1714551838::1::::<><>::
-Forma 6 #1.png::CompressedTexture2D::5756257361148325263::1585505316::1714551838::1::::<><>::
-Forma 7 #1.png::CompressedTexture2D::5217890523423846620::1585505316::1714551838::1::::<><>::
-Forma 8 #1.png::CompressedTexture2D::7959810344140694000::1585505316::1714551838::1::::<><>::
-Forma 9 #1.png::CompressedTexture2D::3621344244335124753::1585505318::1714551838::1::::<><>::
-Forma 10 #1.png::CompressedTexture2D::123594191578525480::1585505318::1714551838::1::::<><>::
-Forma 11 #1.png::CompressedTexture2D::7522330880370980796::1585505318::1714551838::1::::<><>::
-Forma 12 #1.png::CompressedTexture2D::4297602081146124890::1585505318::1714551838::1::::<><>::
-Forma 13 #1.png::CompressedTexture2D::3160061814696562556::1585505318::1714551838::1::::<><>::
-Forma 14 #1.png::CompressedTexture2D::3478250443295456958::1585505318::1714551838::1::::<><>::
-Forma 15 #1.png::CompressedTexture2D::4970322769484450116::1585505318::1714551838::1::::<><>::
-Forma 16 #1.png::CompressedTexture2D::8469797869602908091::1585505318::1714551838::1::::<><>::
-Forma 17 #1.png::CompressedTexture2D::7407158686767071023::1585505318::1714551838::1::::<><>::
-Forma 18 #1.png::CompressedTexture2D::1953944873115529399::1585505318::1714551838::1::::<><>::
-::res://assets/table/Grupo 2 copia/::1714551838
-Capa 1 #1.png::CompressedTexture2D::6163004560158168555::1585505306::1714551838::1::::<><>::
-Capa 2 #1.png::CompressedTexture2D::8103379835889363480::1585505306::1714551838::1::::<><>::
-Capa 12.png::CompressedTexture2D::1657228240095820518::1585505306::1714551838::1::::<><>::
-Forma 1 #1.png::CompressedTexture2D::5422768389250550060::1585505308::1714551838::1::::<><>::
-Forma 6 #3.png::CompressedTexture2D::8071822096380510596::1585505306::1714551838::1::::<><>::
-::res://assets/table/Grupo 2 copia 2/::1714551838
-Capa 1.png::CompressedTexture2D::2006601323526270240::1585505308::1714551838::1::::<><>::
-Capa 2.png::CompressedTexture2D::6692064648395195841::1585505308::1714551838::1::::<><>::
-Capa 10.png::CompressedTexture2D::5768116550642874391::1585505308::1714551838::1::::<><>::
-Forma 1.png::CompressedTexture2D::8491757308174340770::1585505308::1714551838::1::::<><>::
-Forma 6 #2.png::CompressedTexture2D::61570793303136902::1585505308::1714551838::1::::<><>::
-::res://assets/table/Grupo 6/::1714551838
-Capa 11.png::CompressedTexture2D::1783429076777359879::1585505308::1714551838::1::::<><>::
-Grupo 2 copia 3.png::CompressedTexture2D::7814467097161444044::1585505308::1714551838::1::::<><>::
-Grupo 2 copia 4.png::CompressedTexture2D::4248089152385533663::1585505310::1714551838::1::::<><>::
-::res://assets/table/Grupo 7/::1714551838
-Capa 30.png::CompressedTexture2D::5293533204729022463::1585505306::1714551838::1::::<><>::
-Capa 31 copia 16.png::CompressedTexture2D::2302039967815586881::1585505306::1714551838::1::::<><>::
-Forma 29.png::CompressedTexture2D::1891052481095731645::1585505306::1714551838::1::::<><>::
 ::res://assets/table/reel/::1714553818
 ReelBack.png::CompressedTexture2D::6908600500601412239::1585505316::1714553808::1::::<><>::
 Reels.png::CompressedTexture2D::3753941289183088264::1585505310::1714553818::1::::<><>::
@@ -340,12 +285,12 @@ title (composite).png::CompressedTexture2D::2032757270702521517::1585505284::171
 Symtext.ttf::FontFile::6781871056667909824::1609277622::1714400586::1::::<><>::
 ::res://Music/::1714551136
 RealTunesStudio.ogg::AudioStreamOggVorbis::758065219262371774::1714550694::1714551136::1::::<><>::
-::res://scenes/::1714553854
+::res://scenes/::1714580611
 Main.gd::GDScript::-1::1714554143::0::1::::<>Node2D<>::
-Main.tscn::PackedScene::7055215202083830476::1714553854::0::1::::<><>::res://scenes/SlotMachine.gd<>uid://c3vgop3i6pcy7::::res://fonts/Symtext.ttf<>uid://bl6v7l3peccdm::::res://assets/background/background (composite).png<>res://scenes/Main.gd
-SlotMachine.gd::GDScript::-1::1714399549::0::1::::<>Node2D<>::
+Main.tscn::PackedScene::7055215202083830476::1714580611::0::1::::<><>::res://scenes/SlotMachine.gd<>uid://c3vgop3i6pcy7::::res://fonts/Symtext.ttf<>uid://bl6v7l3peccdm::::res://assets/background/background (composite).png<>res://scenes/Main.gd<>uid://c5otv14mxljv0::::res://assets/table/reel/ReelBack.png<>uid://bphcfxx6t4nso::::res://assets/table/front_panel.png
+SlotMachine.gd::GDScript::-1::1714556058::0::1::::<>Node2D<>::
 SlotTile.gd::GDScript::-1::1714399442::0::1::::SlotTile<>Node2D<>::
-SlotTile.tscn::PackedScene::6899101701054406029::1714399549::0::1::::<><>::uid://cqs5jbga74euq::::res://sprites/TileIcons/bat.png<>res://scenes/SlotTile.gd
+SlotTile.tscn::PackedScene::6899101701054406029::1714556064::0::1::::<><>::uid://cqs5jbga74euq::::res://sprites/TileIcons/bat.png<>res://scenes/SlotTile.gd
 ::res://sprites/::1714400586
 BackgroundDarkGreen.png::CompressedTexture2D::6642087354080339473::1609277622::1714400586::1::::<><>::
 ::res://sprites/TileIcons/::1714400587

@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var slot = $SubViewportContainer/SubViewport/SlotMachine
+@onready var slot = $Control/SubViewportContainer/SubViewport/SlotMachine
 
 func _ready():
 	slot.connect("stopped", Callable(self, "_on_slot_machine_stopped"))
