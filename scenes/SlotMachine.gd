@@ -32,7 +32,7 @@ preload ("res://sprites/TileIcons/udder.png")
 ]
 
 @export var reels := 5 # (int,1,20)
-@export var tiles_per_reel := 4 # (int,1,20)
+@export var tiles_per_reel := 3 # (int,1,20)
 # Defines how long the reels are spinning
 @export var runtime := 1.0 # (float,0,10)
 # Defines how fast the reels are spinning
@@ -42,7 +42,7 @@ preload ("res://sprites/TileIcons/udder.png")
 
 # Adjusts tile size to viewport
 @onready var size := get_viewport_rect().size
-@onready var tile_size := size / Vector2(reels, tiles_per_reel)
+@onready var tile_size := size / Vector2(reels, tiles_per_reel) - Vector2(10,10)
 # Normalizes the speed for consistancy independent of the number of tiles
 @onready var speed_norm := speed * tiles_per_reel
 # Add additional tiles outside the viewport of each reel for smooth animation

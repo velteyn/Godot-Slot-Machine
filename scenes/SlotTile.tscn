@@ -3,6 +3,21 @@
 [ext_resource type="Texture2D" uid="uid://cqs5jbga74euq" path="res://sprites/TileIcons/bat.png" id="1"]
 [ext_resource type="Script" path="res://scenes/SlotTile.gd" id="2"]
 
+[sub_resource type="Animation" id="Animation_l54f6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
 [sub_resource type="Animation" id="1"]
 resource_name = "SPIN_DOWN"
 length = 0.3
@@ -34,21 +49,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 0.189465),
 "update": 0,
 "values": [Vector2(0, 0), Vector2(0, -100)]
-}
-
-[sub_resource type="Animation" id="Animation_l54f6"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_q10xc"]

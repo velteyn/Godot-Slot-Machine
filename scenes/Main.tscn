@@ -2,13 +2,9 @@
 
 [ext_resource type="Script" path="res://scenes/SlotMachine.gd" id="1"]
 [ext_resource type="FontFile" uid="uid://c3vgop3i6pcy7" path="res://fonts/Symtext.ttf" id="2"]
+[ext_resource type="Texture2D" uid="uid://bl6v7l3peccdm" path="res://assets/background/background (composite).png" id="2_gedyh"]
 [ext_resource type="Script" path="res://scenes/Main.gd" id="3"]
-
-[sub_resource type="Gradient" id="1"]
-
-[sub_resource type="GradientTexture2D" id="2"]
-gradient = SubResource("1")
-width = 1920
+[ext_resource type="Texture2D" uid="uid://c5otv14mxljv0" path="res://assets/table/reel/ReelBack.png" id="4_5fov6"]
 
 [sub_resource type="FontFile" id="3"]
 fallbacks = Array[Font]([ExtResource("2")])
@@ -22,12 +18,10 @@ cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 [node name="Main" type="Node2D"]
 script = ExtResource("3")
 
-[node name="Background" type="Sprite2D" parent="."]
-modulate = Color(0.639216, 0.25098, 0.239216, 1)
-light_mask = 257
-scale = Vector2(1, 1080)
-texture = SubResource("2")
-centered = false
+[node name="BackGround" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_gedyh")
 
 [node name="Roll" type="Button" parent="."]
 offset_left = 1441.79
@@ -47,6 +41,12 @@ offset_bottom = 900.0
 handle_input_locally = false
 size = Vector2i(1000, 800)
 render_target_update_mode = 4
+
+[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_5fov6")
+stretch_mode = 1
 
 [node name="SlotMachine" type="Node2D" parent="SubViewportContainer/SubViewport"]
 script = ExtResource("1")
