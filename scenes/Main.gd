@@ -6,11 +6,11 @@ func _ready():
 	slot.connect("stopped", Callable(self, "_on_slot_machine_stopped"))
 
 func _on_Roll_button_down():
-	if $Roll.text == "Roll":
+	if $Control/TextureRect2/Roll.text == "Roll":
 		slot.start()
-		$Roll.text = "Stop"
+		$Control/TextureRect2/Roll.text = "Stop"
 	else:
 		slot.stop()
 		
 func _on_slot_machine_stopped():
-	$Roll.text = "Roll"
+	$Control/TextureRect2/Roll.text = "Roll"

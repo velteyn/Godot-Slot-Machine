@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714578442
+::res://::1714834491
 icon.png::CompressedTexture2D::1424998831480025691::1609277622::1714400586::1::::<><>::
 README.md::TextFile::-1::1609277622::0::1::::<><>::
 ::res://assets/::1714551839
@@ -267,8 +267,7 @@ Forma 15 #3.png::CompressedTexture2D::9136782374614053733::1585505294::171455183
 Forma 16 #3.png::CompressedTexture2D::1850075341957358490::1585505294::1714551838::1::::<><>::
 Forma 17 #3.png::CompressedTexture2D::1725664449661556910::1585505294::1714551838::1::::<><>::
 Forma 18 #3.png::CompressedTexture2D::6925963940918999884::1585505294::1714551838::1::::<><>::
-::res://assets/table/::1714581014
-Capa 31.png::CompressedTexture2D::4297110320939985833::1585505306::1714551838::1::::<><>::
+::res://assets/table/::1714582971
 front_panel.png::CompressedTexture2D::3453835590499661534::1714581022::1714581027::1::::<><>::
 table (composite).png::CompressedTexture2D::1826173084511849678::1585505306::1714551839::1::::<><>::
 ::res://assets/table/reel/::1714553818
@@ -285,9 +284,9 @@ title (composite).png::CompressedTexture2D::2032757270702521517::1585505284::171
 Symtext.ttf::FontFile::6781871056667909824::1609277622::1714400586::1::::<><>::
 ::res://Music/::1714551136
 RealTunesStudio.ogg::AudioStreamOggVorbis::758065219262371774::1714550694::1714551136::1::::<><>::
-::res://scenes/::1714580611
-Main.gd::GDScript::-1::1714554143::0::1::::<>Node2D<>::
-Main.tscn::PackedScene::7055215202083830476::1714580611::0::1::::<><>::res://scenes/SlotMachine.gd<>uid://c3vgop3i6pcy7::::res://fonts/Symtext.ttf<>uid://bl6v7l3peccdm::::res://assets/background/background (composite).png<>res://scenes/Main.gd<>uid://c5otv14mxljv0::::res://assets/table/reel/ReelBack.png<>uid://bphcfxx6t4nso::::res://assets/table/front_panel.png
+::res://scenes/::1714583318
+Main.gd::GDScript::-1::1714582886::0::1::::<>Node2D<>::
+Main.tscn::PackedScene::7055215202083830476::1714583318::0::1::::<><>::res://scenes/SlotMachine.gd<>uid://c3vgop3i6pcy7::::res://fonts/Symtext.ttf<>uid://bl6v7l3peccdm::::res://assets/background/background (composite).png<>res://scenes/Main.gd<>uid://c5otv14mxljv0::::res://assets/table/reel/ReelBack.png<>uid://bphcfxx6t4nso::::res://assets/table/front_panel.png
 SlotMachine.gd::GDScript::-1::1714556058::0::1::::<>Node2D<>::
 SlotTile.gd::GDScript::-1::1714399442::0::1::::SlotTile<>Node2D<>::
 SlotTile.tscn::PackedScene::6899101701054406029::1714556064::0::1::::<><>::uid://cqs5jbga74euq::::res://sprites/TileIcons/bat.png<>res://scenes/SlotTile.gd
