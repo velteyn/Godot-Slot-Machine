@@ -1,4 +1,4 @@
-# Godot Slot Machine
+# Godot Slot Machine for Godot 4.3
 
 Simple slot machine based on the [Godot engine](https://godotengine.org/).
 
