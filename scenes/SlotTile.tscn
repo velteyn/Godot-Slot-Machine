@@ -1,47 +1,71 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=3 uid="uid://c5j8gx1wk180h"]
 
-[ext_resource path="res://sprites/TileIcons/bat.png" type="Texture" id=1]
-[ext_resource path="res://scenes/SlotTile.gd" type="Script" id=2]
+[ext_resource type="Texture2D" uid="uid://cqs5jbga74euq" path="res://sprites/TileIcons/bat.png" id="1"]
+[ext_resource type="Script" path="res://scenes/SlotTile.gd" id="2"]
 
-[sub_resource type="Animation" id=1]
-resource_name = "SPIN_DOWN"
-length = 0.5
-step = 0.01
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Sprite:position:y")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
+[sub_resource type="Animation" id="Animation_l54f6"]
+length = 0.001
+tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"points": PoolRealArray( 2.35991, 0, 0, 0.1, 200, 0, -0.2, 0, 0.2, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
 }
 
-[sub_resource type="Animation" id=2]
-resource_name = "SPIN_UP"
-length = 0.7
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Sprite:position:y")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
+[sub_resource type="Animation" id="1"]
+resource_name = "SPIN_DOWN"
+length = 0.3
+step = 0.01
+tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"points": PoolRealArray( -0.140083, -0.2, 0, 0.2, 0, 0, -0.1, -200, 0.1, 200 ),
-"times": PoolRealArray( 0, 0.7 )
+"times": PackedFloat32Array(0, 0.29),
+"transitions": PackedFloat32Array(1, 0.307786),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 100)]
+}
+
+[sub_resource type="Animation" id="2"]
+resource_name = "SPIN_UP"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 0.189465),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -100)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q10xc"]
+_data = {
+"RESET": SubResource("Animation_l54f6"),
+"SPIN_DOWN": SubResource("1"),
+"SPIN_UP": SubResource("2")
 }
 
 [node name="SlotWheel" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource("2")
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, -0.140083 )
-texture = ExtResource( 1 )
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1")
 centered = false
 
 [node name="Animations" type="AnimationPlayer" parent="."]
-anims/SPIN_DOWN = SubResource( 1 )
-anims/SPIN_UP = SubResource( 2 )
-
-[node name="Tween" type="Tween" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_q10xc")
+}
