@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://c7rummk40cx6s"]
+
+[ext_resource type="Script" path="res://scenes/SlotMachine.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://c3vgop3i6pcy7" path="res://fonts/Symtext.ttf" id="2"]
+[ext_resource type="Script" path="res://scenes/Main.gd" id="3"]
+
+[sub_resource type="Gradient" id="1"]
+
+[sub_resource type="GradientTexture2D" id="2"]
+gradient = SubResource("1")
+width = 1920
+
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("2")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("3")
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.639216, 0.25098, 0.239216, 1)
+light_mask = 257
+scale = Vector2(1, 1080)
+texture = SubResource("2")
+centered = false
+
+[node name="Roll" type="Button" parent="."]
+offset_left = 1441.79
+offset_top = 881.984
+offset_right = 1782.79
+offset_bottom = 963.984
+theme_override_fonts/font = SubResource("3")
+text = "Roll"
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_left = 200.0
+offset_top = 100.0
+offset_right = 1200.0
+offset_bottom = 900.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1000, 800)
+render_target_update_mode = 4
+
+[node name="SlotMachine" type="Node2D" parent="SubViewportContainer/SubViewport"]
+script = ExtResource("1")
+
+[connection signal="button_down" from="Roll" to="." method="_on_Roll_button_down"]
