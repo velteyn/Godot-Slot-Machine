@@ -2,11 +2,6 @@
 
 Simple slot machine based on the [Godot engine](https://godotengine.org/).
 
-Icons were copied from this [memory game](https://github.com/Tzoop/MemoryGame) and originate from [Game-Icons](https://game-icons.net/).
-
-![Alt Text](demo.gif)
-
-
 ## Parameters
 - array of pictures
 - number of reels
